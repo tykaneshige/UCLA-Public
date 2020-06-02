@@ -73,7 +73,7 @@ def generate_data(time, print_out = False):
   # Print the data (optional)
   if print_out:
     print("Mean = " + str(np.around(mean, 3)) + "ms")
-    print("Standard Deviation = " + str(np.around(std, 3)) + "\n")
+    print("Standard Deviation = " + str(np.around(std, 3)) + "ms\n")
   
   return [mean, std]
 
@@ -208,12 +208,12 @@ def plot_hist(time, label, intervals = 0, color = 'red', alpha = 1):
 
 # --- Examples of Functions --- #
 
-results = import_data('/content/drive/My Drive/1. UCLA/2. Year 2/PHYSICS 4AL/Data/Test 1 - Thomas - Sheet1.csv')
+results = import_data('')
 
 # Graphical analysis of general trends over time
 # May be useful to observe how reaction times changed depending on the interval
 # Providing a start and end window will make the data easier to read when graphed
-plot_trends('/content/drive/My Drive/1. UCLA/2. Year 2/PHYSICS 4AL/Data/Test 1 - Thomas - Sheet1.csv', start = 75, end = 100)
+plot_trends('', start = 75, end = 100)
 
 # Pitch 1
 
