@@ -134,7 +134,6 @@ def plot_trends(path, start = 0, end = 0):
 
 # Gaussian curve function
 def gaussian_function(x, amp, mu, sigma):
-  # a = (1 / (sigma * np.sqrt(2 * np.pi))) * 10000
   e = -0.5 * (((x - mu) / sigma) ** 2)
   y = amp * np.exp(e)
   return y
